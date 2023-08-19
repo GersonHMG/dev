@@ -1,0 +1,69 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque en el fondo */
+    z-index: 100;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .header:hover {
+    background-color: white; /* Fondo blanco al pasar el mouse */
+  }
+  
+  .logo img {
+    width: 50px;
+    height: auto;
+  }
+  
+  .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #3da9fc; /* Color celeste */
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav a:hover {
+    color: #333; /* Color gris oscuro al pasar el mouse */
+  }
+  
+  
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-icon {
+    display: block; /* Mostrar el ícono del menú */
+  }
+
+  .menu-list {
+    display: none; /* Ocultar la lista de opciones del menú */
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .menu-list.active {
+    display: block; /* Mostrar la lista de opciones del menú al activar el menú desplegable */
+  }
+}

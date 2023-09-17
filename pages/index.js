@@ -27,7 +27,7 @@ export default function Home() {
           <iframe
             width="560"
             height="315"
-            src="https://youtu.be/ZLaRNBYgRjs?si=N3FXW4-64NrQbyu_"
+            src="https://www.youtube.com/embed/ZLaRNBYgRjs?si=s4M-mYcPki_ivXub"
             title="YouTube MUVEC"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

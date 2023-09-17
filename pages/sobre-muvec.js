@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from '../styles/SobreMuvec.module.css';
+import Script from 'next/script';
 
 const SobreMuvec = () => {
   return (
@@ -71,7 +72,7 @@ const SobreMuvec = () => {
           gtag('config', 'G-TSP37PYT9E');`,
         }}
       />
-      
+
     </div>
   );
 };

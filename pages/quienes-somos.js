@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { FaInstagram, FaLinkedin } from 'react-icons/fa';
 import styles from '../styles/AboutUs.module.css';
+import Script from 'next/script';
 
 function AboutUs() {
   return (
@@ -131,7 +132,7 @@ function AboutUs() {
           gtag('config', 'G-TSP37PYT9E');`,
         }}
       />
-      
+
     </div>
   );
 }

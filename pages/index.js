@@ -1,5 +1,6 @@
 import styles from '../styles/Home.module.css';
 import Image from 'next/image'
+import Script from 'next/script';
 
 
 export default function Home() {
@@ -34,6 +35,18 @@ export default function Home() {
           ></iframe>
         </div>
       </section>
+      <Script 
+      strategy="afterInteractive"
+      src="https://www.googletagmanager.com/gtag/js?id=G-TSP37PYT9E"
+      />
+
+      <Script id="google-analytics" strategy="afterInteractive"
+      {` window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-TSP37PYT9E');`}
+        
+      />
     </div>
   );
 }

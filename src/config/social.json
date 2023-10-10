@@ -1,0 +1,14 @@
+{
+  "main": [
+    {
+      "name": "instagram",
+      "icon": "FaInstagram",
+      "link": "https://www.instagram.com/muvec_/"
+    },
+    {
+      "name": "linkedin",
+      "icon": "FaLinkedin",
+      "link": "https://www.linkedin.com/company/muvec1/"
+    }
+  ]
+}

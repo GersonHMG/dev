@@ -1,0 +1,18 @@
+{
+  "main": [
+    {
+      "name": "Inicio",
+      "url": "/"
+    },
+    {
+      "name": "Sobre Muvec",
+      "url": "/about"
+    },
+    {
+      "name": "Equipo",
+      "url": "/authors"
+    }
+  ],
+  "footer": [
+  ]
+}

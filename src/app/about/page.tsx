@@ -6,7 +6,7 @@ import SeoMeta from "@/partials/SeoMeta";
 import { RegularPage } from "@/types";
 import Testimonials from "@/partials/Testimonials";
 import CallToAction from "@/partials/CallToAction";
-
+import Script from 'next/script';
 
 
 const About = () => {

@@ -4,6 +4,7 @@ import PageHeader from "@/partials/PageHeader";
 import SeoMeta from "@/partials/SeoMeta";
 import { Author } from "@/types";
 import Testimonials from "@/partials/Testimonials";
+import Script from 'next/script';
 
 const Authors = () => {
   const authorIndex: Author = getListPage("authors/_index.md");
@@ -28,6 +29,14 @@ const Authors = () => {
               </div>
             ))}
           </div>
+          <Script id="google-analytics" strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-TSP37PYT9E');`,
+        }}
+      />
         </div>
       </section>
       <Testimonials data={testimonial} />

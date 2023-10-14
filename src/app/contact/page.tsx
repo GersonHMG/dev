@@ -3,6 +3,7 @@ import { getListPage } from "@/lib/contentParser";
 import PageHeader from "@/partials/PageHeader";
 import SeoMeta from "@/partials/SeoMeta";
 import { RegularPage } from "@/types";
+import Script from 'next/script';
 
 const Contact = async () => {
   const data: RegularPage = getListPage("contact/_index.md");
@@ -66,6 +67,15 @@ const Contact = async () => {
               </form>
             </div>
           </div>
+          <Script id="google-analytics" strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-TSP37PYT9E');`,
+        }}
+      />
+      
         </div>
       </section>
     </>

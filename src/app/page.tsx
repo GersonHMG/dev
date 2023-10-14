@@ -3,6 +3,7 @@ import { getListPage } from "@/lib/contentParser";
 import { markdownify } from "@/lib/utils/textConverter";
 import SeoMeta from "@/partials/SeoMeta";
 import { Button, Feature } from "@/types";
+import Script from 'next/script';
 
 const Home = () => {
   const homepage = getListPage("homepage/_index.md");
@@ -107,6 +108,16 @@ const Home = () => {
                   </a>
                 )}
               </div>
+              
+              <Script id="google-analytics" strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-TSP37PYT9E');`,
+        }}
+      />
+
             </div>
           </div>
         </section>

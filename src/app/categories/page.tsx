@@ -4,6 +4,7 @@ import { humanize } from "@/lib/utils/textConverter";
 import PageHeader from "@/partials/PageHeader";
 import SeoMeta from "@/partials/SeoMeta";
 import Link from "next/link";
+import Script from 'next/script';
 
 const Categories = () => {
   const { blog_folder } = config.settings;
@@ -36,6 +37,15 @@ const Categories = () => {
               );
             })}
           </ul>
+          <Script id="google-analytics" strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-TSP37PYT9E');`,
+        }}
+      />
+      
         </div>
       </section>
     </>

@@ -3,6 +3,7 @@ import Search from "@/layouts/Search";
 import { getSinglePage } from "@/lib/contentParser";
 import SeoMeta from "@/partials/SeoMeta";
 import { Post } from "@/types";
+import Script from 'next/script';
 
 const { blog_folder } = config.settings;
 

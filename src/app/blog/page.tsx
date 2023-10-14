@@ -9,6 +9,7 @@ import PostSidebar from "@/partials/PostSidebar";
 import SeoMeta from "@/partials/SeoMeta";
 import { Post } from "@/types";
 const { blog_folder, pagination } = config.settings;
+import Script from 'next/script';
 
 // for all regular pages
 const Posts = () => {
@@ -55,6 +56,14 @@ const Posts = () => {
               allCategories={allCategories}
             />
           </div>
+          <Script id="google-analytics" strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-TSP37PYT9E');`,
+        }}
+      />
         </div>
       </section>
     </>

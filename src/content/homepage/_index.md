@@ -2,7 +2,7 @@
 # Banner
 banner:
   title: "Sumérgete en el Museo de Videojuegos Chilenos"
-  content: "Una nueva forma de ver la industria chilena de videojuegos usando realidad virtual!"
+  content: ""
   button:
     enable: false
     label: "Get Started For Free"

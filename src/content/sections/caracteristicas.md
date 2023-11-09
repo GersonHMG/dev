@@ -8,7 +8,7 @@ testimonials:
   - name: "Innovación"
     designation: ""
     avatar: "/images/bombilla.png"
-    content: "MUVEC utiliza la inmersion del VR para mostrarte 
+    content: "MUVEC utiliza la inmersión del VR para mostrarte 
     la historia de los videojuegos como nunca antes"
 
   - name: "Colaboracíon"

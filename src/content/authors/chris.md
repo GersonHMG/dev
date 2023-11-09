@@ -13,4 +13,4 @@ social:
     icon: FaLinkedin
     link: https://www.linkedin.com/in/christopher-guibout-533b01170/
 ---
-Encargado de Tecnologias
+Encargado de Tecnologías
